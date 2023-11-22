@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<style>
+
+    .header {
+  height: auto;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+#menu-btn {
+  display: block;
+}
+@media only screen and (max-width: 408px) {
+    .category{
+        margin-bottom: 220px;
+    }
+    body {
+        background-color: #143E4A;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .category{
+        padding-bottom: 550px;
+    }
+
+}
+
+@media only screen and (min-width: 480px) {
+   .navbar {
+    display: block;
+   }
+   #category{
+        padding-bottom: 550px;
+    }
+
+  #menu-btn {
+    display: none;
+  }
+}
+
+
+</style>
+    
+    <title>Wordtopia</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/wordtopia.ico">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo" ><img src="images/wlogo.png" style="float: left; width: 43px; height: 40px;"/></i> Wordtopia </a>
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Courses</a>
+                <ul>
+                    <li><a href="course-1.html">Homonyms</a></li>
+                    <li><a href="course-2.html">Homograph</a></li>
+                    <li><a href="course-3.html">Homophones</a></li>
+                </ul>
+                <li><a href="blog.html">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </li>
+            <li>
+                <div class="search-container">
+                    <input type="text" placeholder="Type the word here..." id="inp-word" autofocus />
+                    <button id="search-btn" aria-hidden="true"><i class="fa fa-search"></i></button>
+                  </div>
+        </form> </li>
+  </ul>
+</nav>
+</header>
+
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+
+
+<section class="home">
+
+    
+    <div class="image">
+        <img src="images/course.png" alt="">
+    </div>
+  
+
+    <div class="content">
+        <audio id="sound"></audio>
+              <div  class="search-box"></div>    
+              <div  class="result" id="result"></div>
+    </div>
+
+
+</section>
+
+
+<!-- categories section ends -->
+
+
+<section class="category" style="padding-top: 40px;">
+
+    <a href="course-1.html" class="box" >
+        <img src="images/Homonyms1.png" alt="">
+        <h4>Homonyms</h4>
+    </a>
+
+    <a href="course-2.html" class="box">
+        <img src="images/Homograph1.png"  alt="">
+        <h4>Homograph</h4>
+    </a>
+
+    <a href="course-3.html" class="box" >
+        <img src="images/Homophones1.png" alt="">
+        <h4>Homophones</h4>
+    </a>
+    
+</section>
+    
+</section>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+  
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> Contact </a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="https://www.facebook.com/profile.php?id=100090596835179"> <i class="fab fa-facebook-f"></i> Facebook </a>
+          <a href="https://twitter.com/WordTopiaPH"> <i class="fab fa-twitter"></i> Twitter </a>
+          <a href="https://www.instagram.com/wordtopia/"> <i class="fab fa-instagram"></i> Instagram </a>
+          <a href="https://www.tiktok.com/@wordtopiaph"> <i class="fab fa-tiktok"></i> Tiktok </a>
+          <a href="https://github.com/WordTopia"> <i class="fab fa-github"></i> Github </a>
+          <a href="https://www.linkedin.com/in/word-topia-92a014268/"> <i class="fab fa-linkedin"></i> LinkedIn </a>
+        </div>
+  
+    </div>
+    <div class="credit"> WDTopia | All Rights Reserved! </div>
+  </section>
+
+
+<!-- footer section ends -->
+<script>
+    window.addEventListener('load', function() {
+        var query = new URL(window.location.href).searchParams.get('word');
+        document.getElementById('inp-word').value = query;
+        document.getElementById('search-btn').click();
+      });</script>
+      
+      <script>
+      document.getElementById('inp-word').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+          document.getElementById('search-btn').click();
+        }
+      });
+      </script>
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

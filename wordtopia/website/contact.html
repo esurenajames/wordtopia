@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/wordtopia.ico">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body style="background-color: #143E4A;">
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo" ><img src="images/wlogo.png" style="float: left; width: 43px; height: 40px;"/></i> Wordtopia </a>
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Courses</a>
+                <ul>
+                    <li><a href="course-1.html">Homonyms</a></li>
+                    <li><a href="course-2.html">Homograph</a></li>
+                    <li><a href="course-3.html">Homophones</a></li>
+                </ul>
+            </li>   
+                    <li><a href="blog.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            <li>
+                <form action="course.html" method="get">
+            <div class="search-container">
+                <input type="text" placeholder="Search Dictionary" id="inp-word" name="word" />
+                <button id="search-btn" aria-hidden="true" type="submit"><i class="fa fa-search"></i></button>
+              </div>
+            </form> </li>
+  </ul>
+</nav>
+</header>
+
+
+<!-- header section ends -->
+
+<section class="heading">
+    <h3 style="color: aliceblue;">Contact Us</h3>
+    <p style="color: aliceblue;"> <a href="index.html" style="color: rgb(47, 112, 168);">Home >></a> Contact </p>
+</section>
+
+<section class="contact">
+
+    <div class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>Our Number</h3>
+            <p>+63 900 001 0001</p>
+            <p>+63 920 001 0001</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3>Our Email</h3>
+            <p>browse.wordtopia@gmail.com</p>
+            
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Our Address</h3>
+            <p>Fairview Quezon City</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <form action="" st>
+            <h3>Get in touch</h3>
+            <input type="Text" placeholder="Your Name" class="box">
+            <input type="Number" placeholder="Your Number" class="box">
+            <input type="Email" placeholder="Your Email" class="box">
+            <textarea name="" placeholder="Your Message" id="" cols="30" rows="10"></textarea>
+            <input type="Submit" value="Send Message" class="btn">
+        </form>
+
+        <iframe class="map" src="https://maps.google.com/maps?q=fairview%20quezon&t=k&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+
+</section>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+  
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> Contact </a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="https://www.facebook.com/profile.php?id=100090596835179"> <i class="fab fa-facebook-f"></i> Facebook </a>
+          <a href="https://twitter.com/WordTopiaPH"> <i class="fab fa-twitter"></i> Twitter </a>
+          <a href="https://www.instagram.com/wordtopia/"> <i class="fab fa-instagram"></i> Instagram </a>
+          <a href="https://www.tiktok.com/@wordtopiaph"> <i class="fab fa-tiktok"></i> Tiktok </a>
+          <a href="https://github.com/WordTopia"> <i class="fab fa-github"></i> Github </a>
+          <a href="https://www.linkedin.com/in/word-topia-92a014268/"> <i class="fab fa-linkedin"></i> LinkedIn </a>
+        </div>
+  
+    </div>
+    <div class="credit"> WDTopia | All Rights Reserved! </div>
+  </section>
+
+<!-- footer section ends -->
+<script>
+    function searchWord() {
+      var word = document.getElementById("inp-word").value;
+      sessionStorage.setItem("word", word);
+      window.location.href = "course.html"
+     }
+  </script>
+
+    <script> document.getElementById('search-btn').addEventListener('click', function() {
+        // Get the search query
+        var query = document.getElementById('inp-word').value;
+        // Redirect to index.html and add the search query as a URL parameter
+        window.location.href = 'index.html?word=' + query;
+      });
+      </script>
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

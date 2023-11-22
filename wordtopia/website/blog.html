@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/wordtopia.ico">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo" ><img src="images/wlogo.png" style="float: left; width: 43px; height: 40px;"/></i> Wordtopia </a>
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Courses</a>
+                <ul>
+                    <li><a href="course-1.html">Homonyms</a></li>
+                    <li><a href="course-2.html">Homograph</a></li>
+                    <li><a href="course-3.html">Homophones</a></li>
+                </ul>
+            </li>   
+                    <li><a href="blog.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            <li>
+                <form action="course.html" method="get">
+            <div class="search-container">
+                <input type="text" placeholder="Search Dictionary" id="inp-word" name="word" />
+                <button id="search-btn" aria-hidden="true" type="submit"><i class="fa fa-search"></i></button>
+              </div>
+            </form> </li>
+  </ul>
+</nav>
+</header>
+
+
+<!-- header section ends -->
+
+<section class="heading">
+    <h3 style="color: aliceblue;">Quiz & Games</h3>
+    <p style="color: aliceblue;"> <a href="index.html" style="color: rgb(47, 112, 168);">Home >></a>Quiz & Games</p>
+</section>
+
+<!-- blog section starts  -->
+
+<section class="blog">
+
+    <div class="box">
+        <div class="image">
+            <img src="images/quizz.png" alt="">
+        </div>
+        <div class="content">
+        <h3>Homonyms</h3>
+        <p>Test your knowledge and understanding about Homonyms.</p>
+        <button onclick="showOptionModal()" class="btn">Take a quiz</button>
+
+        <div class="modal-container" id="option-modal">
+            <div class="modal-content-container" style="height: 450px; text-align: center; width: 350px;">
+                <h1 style="padding-top: 20px;">Quiz Instructions</h1>
+                <p>This quiz have 10 question. <br>
+        
+                    After choosing your answer, click the "next question". You have 10 seconds to answers each question 
+                    when the timer ends it would be automatically 
+                    mark as wrong and would proceed to the next item. <br>
+                    
+                    Click the "Start" button to begin the quiz. Goodluck!
+                </p>
+        <div class="modal-button-container" style="padding-bottom: 40px;">
+            <button onclick="closeOptionModal()">Back</button>
+            <button onclick="startQuiz()">Start</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showOptionModal() {
+        document.getElementById('option-modal').style.display = "flex";
+    }
+
+    function closeOptionModal() {
+        document.getElementById('option-modal').style.display = "none";
+    }
+
+    function startQuiz() {
+        window.location.href = "homonymsquiz.html"; //redirect to quiz page
+    }
+
+    //hide the modal initially
+    document.getElementById('option-modal').style.display = "none";
+</script>
+
+
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="images/quizz.png" alt="">
+        </div>
+        <div class="content">
+            <h3>Homographs</h3>
+            <p>Test your knowledge and understanding about Homographs.</p>
+            <button onclick="showOptionModal1()" class="btn">Take a quiz</button>
+
+            <div class="modal-container" id="option-modal1">
+                <div class="modal-content-container" style="height: 450px; text-align: center; width: 350px;">
+                    <h1 style="padding-top: 20px;">Quiz Instructions</h1>
+                    <p>This quiz have 10 question. <br>
+            
+                        After choosing your answer, click the "next question". You have 10 seconds to answers each question 
+                        when the timer ends it would be automatically 
+                        mark as wrong and would proceed to the next item. <br>
+                        
+                        Click the "Start" button to begin the quiz. Goodluck!
+                    </p>
+        <div class="modal-button-container" style="padding-bottom: 40px;">
+            <button onclick="closeOptionModal1()">Back</button>
+            <button onclick="startQuiz1()">Start</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showOptionModal1() {
+        document.getElementById('option-modal1').style.display = "flex";
+    }
+
+    function closeOptionModal1() {
+        document.getElementById('option-modal1').style.display = "none";
+    }
+
+    function startQuiz1() {
+        window.location.href = "homographsquiz.html"; //redirect to quiz page
+    }
+
+    //hide the modal initially
+    document.getElementById('option-modal1').style.display = "none";
+</script>
+
+
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="images/quizz.png" alt="">
+        </div>
+        <div class="content">
+            <h3>Homophones</h3>
+            <p>Test your knowledge and understanding about Homophones.</p>
+            <button onclick="showOptionModal2()" class="btn">Take a quiz</button>
+
+<div class="modal-container" id="option-modal2">
+    <div class="modal-content-container" style="height: 450px; text-align: center; width: 350px;">
+        <h1 style="padding-top: 20px;">Quiz Instructions</h1>
+        <p>This quiz have 10 question. <br>
+
+            After choosing your answer, click the "next question". You have 10 seconds to answers each question 
+            when the timer ends it would be automatically 
+            mark as wrong and would proceed to the next item. <br>
+            
+            Click the "Start" button to begin the quiz. Goodluck!
+        </p>
+        <div class="modal-button-container" style="padding-bottom: 40px;">
+            <button onclick="closeOptionModal2()">Back</button>
+            <button onclick="startQuiz2()">Start</button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+<script>
+    function showOptionModal2() {
+        document.getElementById('option-modal2').style.display = "flex";
+    }
+
+    function closeOptionModal2() {
+        document.getElementById('option-modal2').style.display = "none";
+    }
+
+    function startQuiz2() {
+        window.location.href = "homophonesquiz.html"; //redirect to quiz page
+    }
+
+    //hide the modal initially
+    document.getElementById('option-modal2').style.display = "none";
+</script>
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+  
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> Contact </a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="https://www.facebook.com/profile.php?id=100090596835179"> <i class="fab fa-facebook-f"></i> Facebook </a>
+          <a href="https://twitter.com/WordTopiaPH"> <i class="fab fa-twitter"></i> Twitter </a>
+          <a href="https://www.instagram.com/wordtopia/"> <i class="fab fa-instagram"></i> Instagram </a>
+          <a href="https://www.tiktok.com/@wordtopiaph"> <i class="fab fa-tiktok"></i> Tiktok </a>
+          <a href="https://github.com/WordTopia"> <i class="fab fa-github"></i> Github </a>
+          <a href="https://www.linkedin.com/in/word-topia-92a014268/"> <i class="fab fa-linkedin"></i> LinkedIn </a>
+        </div>
+  
+    </div>
+    <div class="credit"> WDTopia | All Rights Reserved! </div>
+  </section>
+
+
+<!-- footer section ends -->
+<script>
+    function searchWord() {
+      var word = document.getElementById("inp-word").value;
+      sessionStorage.setItem("word", word);
+      window.location.href = "course.html"
+     }
+  </script>
+
+    <script> document.getElementById('search-btn').addEventListener('click', function() {
+        // Get the search query
+        var query = document.getElementById('inp-word').value;
+        // Redirect to index.html and add the search query as a URL parameter
+        window.location.href = 'index.html?word=' + query;
+      });
+      </script>
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

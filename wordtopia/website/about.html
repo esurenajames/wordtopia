@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/wordtopia.ico">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo" ><img src="images/wlogo.png" style="float: left; width: 43px; height: 40px;"/></i> Wordtopia </a>
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Courses</a>
+                <ul>
+                    <li><a href="course-1.html">Homonyms</a></li>
+                    <li><a href="course-2.html">Homograph</a></li>
+                    <li><a href="course-3.html">Homophones</a></li>
+                </ul>
+            </li>   
+                    <li><a href="blog.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            <li>
+                <form action="course.html" method="get">
+            <div class="search-container">
+                <input type="text" placeholder="Search Dictionary" id="inp-word" name="word" />
+                <button id="search-btn" aria-hidden="true" type="submit"><i class="fa fa-search"></i></button>
+              </div>
+            </form> </li>
+  </ul>
+</nav>
+</header>
+
+
+<!-- header section ends -->
+
+<!-- about section starts  -->
+
+<section class="about">
+
+    <div class="image">
+        <img src="images/about.png" alt="">
+    </div>
+
+    <div class="content" style="text-align: center;">
+        <h3>We are Wordtopia!</h3>
+        <p>Wordtopia is an online platform dedicated to improving the reading skills of Filipinos and learners all over the world. Our aim is to address the problem of low reading comprehension in the Philippines and other countries by providing access to high-quality reading materials and interactive exercises. With a unique approach developed by our team, we help students build comprehension, vocabulary, and critical thinking skills in a fun and engaging way. At Wordtopia, we are committed to promoting literacy and transforming education to create a brighter future for everyone wants to learn English.</p>
+        <a href="https://www.cnnphilippines.com/news/2019/12/3/PH-ranks-low-in-reading,-math,-science,-survey-shows.html" target="_blank" class="btn">Read more</a>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+  
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> Contact </a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="https://www.facebook.com/profile.php?id=100090596835179"> <i class="fab fa-facebook-f"></i> Facebook </a>
+          <a href="https://twitter.com/WordTopiaPH"> <i class="fab fa-twitter"></i> Twitter </a>
+          <a href="https://www.instagram.com/wordtopia/"> <i class="fab fa-instagram"></i> Instagram </a>
+          <a href="https://www.tiktok.com/@wordtopiaph"> <i class="fab fa-tiktok"></i> Tiktok </a>
+          <a href="https://github.com/WordTopia"> <i class="fab fa-github"></i> Github </a>
+          <a href="https://www.linkedin.com/in/word-topia-92a014268/"> <i class="fab fa-linkedin"></i> LinkedIn </a>
+        </div>
+  
+    </div>
+    <div class="credit"> WDTopia | All Rights Reserved! </div>
+  </section>
+
+<!-- footer section ends -->
+<script>
+    function searchWord() {
+      var word = document.getElementById("inp-word").value;
+      sessionStorage.setItem("word", word);
+      window.location.href = "course.html"
+     }
+  </script>
+
+    <script> document.getElementById('search-btn').addEventListener('click', function() {
+        // Get the search query
+        var query = document.getElementById('inp-word').value;
+        // Redirect to index.html and add the search query as a URL parameter
+        window.location.href = 'index.html?word=' + query;
+      });
+      </script>
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homonyms</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/wordtopia.ico">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo" ><img src="images/wlogo.png" style="float: left; width: 43px; height: 40px;"/></i> Wordtopia </a>
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Courses</a>
+                <ul>
+                    <li><a href="course-1.html">Homonyms</a></li>
+                    <li><a href="course-2.html">Homograph</a></li>
+                    <li><a href="course-3.html">Homophones</a></li>
+                </ul>
+            </li>   
+                    <li><a href="blog.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            <li>
+                <form action="course.html" method="get">
+            <div class="search-container">
+                <input type="text" placeholder="Search Dictionary" id="inp-word" name="word" />
+                <button id="search-btn" aria-hidden="true" type="submit"><i class="fa fa-search"></i></button>
+              </div>
+            </form> </li>
+  </ul>
+</nav>
+</header>
+
+
+<!-- header section ends -->
+
+<section class="heading">
+    <h3 style="color: aliceblue;">Homonyms</h3>
+    <p style="color: aliceblue;"> <a href="index.html" style="color: rgb(47, 112, 168);">Home >></a> <a href="course.html" style="color: rgb(47, 112, 168);">Courses >></a> Homonyms</p>
+</section>
+
+<!-- course-1 section starts  -->
+
+<section class="course-1">
+
+    <div class="box">
+        <img src="images/course1.png" alt="">
+        <h3>Homonyms: Introduction</h3>
+        <p>Discover the power of words that sound the same but have different meanings with the captivating journey of learning homonyms!</p>
+        <a href="homonymsc1.html" class="btn">Read more</a>
+    </div>
+
+    <div class="box">
+        <img src="images/course2.png" alt="">
+        <h3>Homonyms: Advancing Your Wordplay</h3>
+        <p>Get ready to level up your homonym game as we delve deeper into Lesson 2 and unravel the mysteries of words that sound alike but mean different things!</p>
+        <a href="homonymsc2.html" class="btn">Read more</a>
+    </div>
+
+</section>
+
+<!-- course-1 section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+  
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> Contact </a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="https://www.facebook.com/profile.php?id=100090596835179"> <i class="fab fa-facebook-f"></i> Facebook </a>
+          <a href="https://twitter.com/WordTopiaPH"> <i class="fab fa-twitter"></i> Twitter </a>
+          <a href="https://www.instagram.com/wordtopia/"> <i class="fab fa-instagram"></i> Instagram </a>
+          <a href="https://www.tiktok.com/@wordtopiaph"> <i class="fab fa-tiktok"></i> Tiktok </a>
+          <a href="https://github.com/WordTopia"> <i class="fab fa-github"></i> Github </a>
+          <a href="https://www.linkedin.com/in/word-topia-92a014268/"> <i class="fab fa-linkedin"></i> LinkedIn </a>
+        </div>
+  
+    </div>
+    <div class="credit"> WDTopia | All Rights Reserved! </div>
+  </section>
+<!-- footer section ends -->
+<script>
+    function searchWord() {
+      var word = document.getElementById("inp-word").value;
+      sessionStorage.setItem("word", word);
+      window.location.href = "course.html"
+     }
+  </script>
+
+    <script> document.getElementById('search-btn').addEventListener('click', function() {
+        // Get the search query
+        var query = document.getElementById('inp-word').value;
+        // Redirect to index.html and add the search query as a URL parameter
+        window.location.href = 'index.html?word=' + query;
+      });
+      </script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
