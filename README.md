@@ -20,7 +20,7 @@ Explore the fascinating world of homonyms, homographs, and homophones with this 
 
 ## Live Demo
 
-Click the link --> https://your-username.github.io/homonyms-explorer](http://wordtopia.xyz/
+Click the link --> http://wordtopia.xyz/
 
 ## Getting Started
 
