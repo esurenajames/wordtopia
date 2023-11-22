@@ -2,6 +2,8 @@
 
 Explore the fascinating world of homonyms, homographs, and homophones with this interactive web application! This educational website is designed to help users understand and distinguish between words that sound alike, look alike, or have similar meanings.
 
+**Note: This is our group project created way back in 2022**
+
 ## Features
 
 - **Interactive Learning:** Engage in an interactive learning experience to explore and understand the concepts of homonyms, homographs, and homophones.
@@ -37,4 +39,4 @@ Contributing
 
 Contributions are welcome! Feel free to open issues and pull requests.
 
-Note: The index1 is for our tictactoe project
+**Note: The index1 is for our tictactoe project**
